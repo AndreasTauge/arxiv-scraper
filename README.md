@@ -188,28 +188,7 @@ src/arxiv_scraper/
 ├── client.py       # query construction, HTTP access, and Atom parsing
 ├── models.py       # immutable paper model
 └── summarizer.py   # dependency-free extractive summarizer
-tests/
-├── test_cli.py
-├── test_client.py
-└── test_summarizer.py
 ```
-
-## Development
-
-Run the test suite without installing additional tools:
-
-```bash
-PYTHONPATH=src python3 -m unittest discover -v
-```
-
-Optional development tools can be run if installed:
-
-```bash
-ruff check .
-ruff format --check .
-```
-
-Tests use a representative saved Atom response and do not contact arXiv.
 
 ## Data source and disclaimer
 
